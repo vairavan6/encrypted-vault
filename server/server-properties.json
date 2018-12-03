@@ -1,0 +1,12 @@
+{
+	"database": {
+		"type":"mongodb://",
+		"host":"localhost:",
+		"port":27017,
+		"name":"encrypted_vault"
+	},
+	"cipher": {
+		"algoPass": "aes-256-ctr",
+		"algoSalt": "aes-128-ccm"
+	}
+}
