@@ -10,15 +10,13 @@ router.use((req,res,next) => {
 
 
 router.post('/store/', async(req,res) => {
-  const x =await vaultControlService.encryptAndStorePass(req);
-  console.log('------------->',x);
+  await vaultControlService.encryptAndStorePass(req);
   res.send('Success');
 });
 
 router.post('/retrieve/', async(req,res) => {
-	const x = await vaultControlService.getDecryptedPass(req);
-	console.log('------------->',x);
-	res.send('Success');
+  await vaultControlService.getDecryptedPass(req);
+  res.send('Success');
 });
 
 

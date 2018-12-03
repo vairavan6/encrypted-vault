@@ -15,8 +15,7 @@ const vaultControlSchema = new Schema({
 /*
  * Define Models
  **/
-//const vaultControlModel = model(CONSTANTS.VAULT_CONTROL, vaultControlSchema);
-const vaultControlModel = model('vault_control', vaultControlSchema);
+const vaultControlModel = model(CONSTANTS.VAULT_CONTROL, vaultControlSchema);
 
 module.exports={
   vaultControlModel

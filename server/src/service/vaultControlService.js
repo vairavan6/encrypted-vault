@@ -37,8 +37,8 @@ async function encrypter(algorithm, secretKey, secureInfo) {
 
 async function decrypter(algorithm, secretKey, secureInfo) {
 	const decipher  = crypto.createDecipher(algorithm, secretKey);
-	let decrypted = decipher.update(secureInfo,'utf8','hex')
-	decrypted += decipher.final('hex');
+	let decrypted = decipher.update(secureInfo,'hex','utf8')
+	decrypted += decipher.final('utf8');
 	return decrypted;
 }
 
