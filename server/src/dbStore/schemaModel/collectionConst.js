@@ -4,35 +4,6 @@ const VAULT_CONTROL = 'vault_control';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports={
   USER_CONTROL,
   USER_SALT,
